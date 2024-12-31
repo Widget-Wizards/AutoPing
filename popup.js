@@ -10,4 +10,13 @@ document.getElementById("stop").addEventListener("click", () => {
     document.getElementById("status").textContent = "Auto-refresh stopped.";
   });
 });
-  
+
+document.getElementById('info-button').addEventListener('click', function() {
+        const note = document.getElementById('developer-note');
+        // Toggle the visibility of the developer note
+        if (note.style.display === 'none' || note.style.display === '') {
+            note.style.display = 'block';
+        } else {
+            note.style.display = 'none';
+        }
+    });
