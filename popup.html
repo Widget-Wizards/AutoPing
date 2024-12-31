@@ -2,64 +2,90 @@
 <html>
 <head>
   <title>AutoPing</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 15px;
-        background: linear-gradient(135deg, #4facfe, #00f2fe);
-        color: #fff;
-        text-align: center;
-        border-radius: 8px;
-        width: 300px;
-        height: 200px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-      }
-      h3 {
-        margin: 0;
-        padding: 10px 0;
-        font-size: 1.5em;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-      }
-      label {
-        font-size: 1em;
-        margin-top: 10px;
-        display: block;
-      }
-      input {
-        width: 80%;
-        padding: 5px;
-        margin: 10px 0;
-        border-radius: 4px;
-        border: none;
-        font-size: 1em;
-        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
-      }
-      button {
-        display: inline-block;
-        margin: 5px;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        background: #ff5e57;
-        color: #fff;
-        font-size: 1em;
-        cursor: pointer;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        transition: background 0.3s ease, transform 0.2s ease;
-      }
-      button:hover {
-        background: #ff3432;
-        transform: translateY(-2px);
-      }
-      button:active {
-        transform: translateY(0);
-      }
-      #status {
-        margin-top: 15px;
-        font-style: italic;
-      }
-    </style>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 15px;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: #fff;
+      text-align: center;
+      border-radius: 8px;
+      width: 300px;
+      height: 250px; /* Adjusted height */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+    h3 {
+      margin: 0;
+      padding: 10px 0;
+      font-size: 1.5em;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    label {
+      font-size: 1em;
+      margin-top: 10px;
+      display: block;
+    }
+    input {
+      width: 80%;
+      padding: 5px;
+      margin: 10px 0;
+      border-radius: 4px;
+      border: none;
+      font-size: 1em;
+      box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    button {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background: #ff5e57;
+      color: #fff;
+      font-size: 1em;
+      cursor: pointer;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    button:hover {
+      background: #ff3432;
+      transform: translateY(-2px);
+    }
+    button:active {
+      transform: translateY(0);
+    }
+    #status {
+      margin-top: 15px;
+      font-style: italic;
+    }
+    /* Info Button Styles */
+    #info-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 12px;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      color: blue;
+      text-decoration: underline;
+    }
+    #info-button img {
+      width: 16px;
+      height: 16px;
+      vertical-align: middle;
+    }
+    #developer-note {
+      display: none;
+      font-size: 10px;
+      color: gray;
+      margin-top: 20px;
+      text-align: center;
+      padding-top: 10px;
+    }
+  </style>
 </head>
 <body>
   <h3>AutoPing</h3>
@@ -70,6 +96,15 @@
   <button id="start">Start</button>
   <button id="stop">Stop</button>
   <p id="status"></p>
+  
+  <button id="info-button">
+    <img src="info.png" alt="Info Icon">
+  </button>
+  <div id="developer-note">
+    <p><strong>© 2025 AutoPing. All Rights Reserved.</strong></p>
+    <p>Created by <strong>Darsh Kulthia</strong>.</p>
+    <p>Powered by <strong>Widget Wizards</strong>.</p>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
