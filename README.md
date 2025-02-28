@@ -17,11 +17,12 @@
 
 ---
 
-## 🔧 Installation
-
-### **Download from Chrome Web Store** 🌐  
-[**AutoPing on Chrome Web Store**](#)  
-_Link will be updated once the extension is available on the Web Store._
+## 🛠 Installation  
+1. **Download or clone this repository.**  
+2. Open `chrome://extensions/` in your browser.  
+3. Enable **Developer Mode** (top right).  
+4. Click **Load Unpacked** and select the folder containing the extension files.  
+5. The extension will be installed and ready to use!  
 
 ---
 
