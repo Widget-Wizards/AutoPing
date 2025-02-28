@@ -43,12 +43,5 @@ For more details, see the [LICENSE](LICENSE) file.
 
 ---
 
-## 🙏 Acknowledgements
-
-- Inspired by the need for **simple and efficient browser automation** 💡.
-- Built using **HTML**, **JavaScript**, and the **Chrome Extensions API** 🔧.
-
----
-
 💬 Feel free to **open an issue** or **submit a pull request** if you find bugs or want to contribute improvements.  
 🌐 Stay tuned for updates, and thank you for using AutoPing! 😊
