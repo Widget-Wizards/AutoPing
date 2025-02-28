@@ -1,3 +1,7 @@
+<p align="center">
+  <p align="center"> <img src="https://github.com/Widget-Wizards/AutoPing/blob/main/icon.png" width="200"/> </p>
+</p>
+
 # 🌟 AutoPing - Browser Auto-Refresh Extension 🚀
 
 **AutoPing** is a lightweight browser extension that allows you to **automatically refresh web pages** at user-defined intervals. Whether you're **monitoring live data**, **staying up to date** with your favorite websites, or **testing web applications**, AutoPing provides a simple solution to keep your tabs refreshed. 🔄
